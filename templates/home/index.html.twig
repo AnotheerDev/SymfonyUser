@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+{# en twig pour recuperer les infos de l'user connecté on utilise app.user.pseudo // avec app.user on accede à l'objet suivi du .pseudo pour l'user connecté #}
+<h1>bienvenu {{ app.user.pseudo }}</h1>
+
+{% endblock %}
