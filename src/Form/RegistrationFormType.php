@@ -40,6 +40,7 @@ class RegistrationFormType extends AbstractType
                 'required' => true,
                 'first_options'  => ['label' => 'Password'],
                 'second_options' => ['label' => 'Repeat Password'],
+                'error_bubbling' => true, // Move the error message to the end of the form
                 'constraints' => [
                     new NotBlank([
                         'message' => 'Please enter a password.',
